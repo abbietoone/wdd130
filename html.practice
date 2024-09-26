@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>BYUI</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+        <a href="https://www.churchofjesuschrist.org">Church of Jesus Christ</a>
+        <a href="https://www.churchofjesuschrist.org/temples">Temples</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
+        <nav>
+    </header>
+    <main>
+        <Img
+            src=https://images.pexels.com/photos/7584205/pexels-photo-7584205.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="The Church of Jesus Christ of Latter Day Saints Temple"       
+        />
+        <p>The Temple is a house of God.  IT is a place where we can find rest and a place where we can learn from the spirit.</p>
+        </main>
+    <footer>
+        <p>My Gospel Web Page 20xx ©</p>
+    </footer>
+  </body>
+</html>
