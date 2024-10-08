@@ -2,7 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url(@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Manrope:wght@200..800&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Manrope:wght@200..800&family=Staatliches&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -16,18 +16,16 @@ Fonts are separated by a & */
   --paragraph-font: Manrope, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #1C4666;  /* headlines on a white background */ 
-  --headline-color-on-color: #1C4666; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #7ec1d2; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #1C4666  
-  --nav-link-color: #7ec1d2;
-  --nav-background-color: #f5de77;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #7ec1d2;
-}
-
-
+  --headline-color-on-white:#1C4666;  /* headlines on a white background */
+  --headline-color-on-color:#1C4666; /* headlines on a colored background */
+  --paragraph-color-on-white:#7ec1d2; /* paragraph text on a white background */
+  --paragraph-color-on-color:white; /* paragraph text on a colored background */
+  --paragraph-background-color:#1C4666
+  --nav-link-color:#7ec1d2;
+  --nav-background-color:#f5de77;
+  --nav-hover-link-color:white;
+  --nav-hover-background-color:#7ec1d2;
+  
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -163,8 +161,3 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
-No text detected.
-Try a screenshot instead.
-0
-:
-00
