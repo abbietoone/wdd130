@@ -4,12 +4,17 @@ div {
     background-color: powderblue;
 }
 
-p {
+#content {
     margin: 0 auto;
 }
 
-.center, nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
-    text-align: center;
+.center,
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align:center;
 }
 
 #background {
@@ -65,7 +70,7 @@ footer a {
     text-decoration: none;
 }
 
-.icon {
+.icon #hero-img {
     width: 80px;
 }
 
