@@ -1,28 +1,29 @@
-div {
-    height: 200px;
-    width: 1600px;
+div #content {
+    max-width:1600px;
     background-color: powderblue;
+    margin:auto;
+    height:200px;
+    text-align: center;
 }
 
-#content {
-    margin: 0 auto;
+div #hero {
+margin: 0 auto;
 }
 
-.center,
-nav a,
 #hero-msg h1,
 #hero-msg h4,
 .button-box,
+nav a,
 main section {
-    text-align:center;
+    text-align: center;
+    margin: 0 auto;
 }
 
-#center, camping: .jpg, facebook.png, fire_icon.png, hero.png, instagram.png logo.png, mountains.png, oars.png, rapids.jpg, rivericon.png, rivers.jpg, twitter.png{
-    camping: .jpg;
-}
-
-#background {
-    height: 725px;
+nav a,
+.book,
+.join {
+    color: #1C4666;
+    text-decoration: none;
 }
 
 body {
@@ -59,8 +60,11 @@ nav a:hover {
 }
 
 #background {
-    background-color: #ffffff;
+    background-color:#7ec1d2;
     color: #1C4666;
+    height:725px;
+    max-width:1600px;
+    margin: 0 auto;
 }
 
 .msg {
@@ -74,15 +78,11 @@ footer a {
     text-decoration: none;
 }
 
-.icon #hero-img {
+.icon,
+.logo {
     width: 80px;
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
+
 footer p {
     font-size: 1.2em;
 }

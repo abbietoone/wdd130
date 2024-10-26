@@ -1,0 +1,41 @@
+body{
+    background-color: cornflowerblue;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+.white-para {
+    text-align: center;
+    color: white;    
+    width: 30%;
+    margin: 30px auto;
+    text-align: center;
+}
+.quote {
+    text-align: center;
+    color: white;
+}
+ol {
+    color: black
+}
+.main-quote {
+    text-align: center;
+    color: white;
+}
+footer {
+    text-align: center;
+    color: black;
+}
+img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+.main-quote {
+    padding: 10px;
+    width: 20%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 2em
+}
