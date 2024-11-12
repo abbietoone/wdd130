@@ -132,6 +132,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h2 {
     margin: 0;
 }
@@ -158,9 +159,7 @@ footer .social img{
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
-.card-img {
-    border: 10px solid #1C4666;
-}
+
 main section img {
     box-sizing: border-box;
 }
@@ -196,6 +195,7 @@ main.home-grid{
 .card-img{
     width: 100%;
     transition: transform .5s;
+    border: 10px solid #1C4666;
 } 
 .card-img:hover {
     opacity: .6;
