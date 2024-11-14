@@ -102,7 +102,7 @@ footer p a:hover {
 }
 
 img#hero-img {
-    margin: 0 auto;
+    grid-template-columns: 150px auto;
     display: grid;
   }
 
