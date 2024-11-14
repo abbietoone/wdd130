@@ -102,8 +102,9 @@ footer p a:hover {
 }
 
 img#hero-img {
-    grid-template-columns: 150px auto;
-    display: grid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home-title {
@@ -240,7 +241,7 @@ section#hero-msg{
     box-shadow: 5px 5px 10px #6f7364;
 }
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero.img, .home-grid {
         display: block;
         height: auto;
     }
@@ -256,6 +257,7 @@ section#hero-msg{
     }
     #hero-msg {
         margin-top: 0;
+        
     }
     #hero-msg h4 {
         display: none;
@@ -283,7 +285,31 @@ section#hero-msg{
     }
 }
 
-
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
 
   .prev, .next {
     cursor: pointer;
@@ -355,35 +381,3 @@ section#hero-msg{
     z index:1;
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    padding: 2rem;
-  }
-
-  .slider {
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior:smooth;
-    box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius:0.5rem;
-  }
-
-.mySlides {
-    position:relative;
-    max-width: 48rem;
-    margin: 0 auto;
-}
-
-  .mySlides {
-    display: flex;
-    aspect-ratio:16/9;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3 rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius:0.5rem;
-  }
