@@ -105,6 +105,7 @@ img#hero-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
 
   .home-title {
@@ -263,7 +264,7 @@ section#hero-msg{
         display: none;
     }
     #hero-msg h1 {
-        color: #6f7364;
+        color: #7ec1d2;
     }
     .home-title {
         font-size: 25px;
@@ -288,7 +289,7 @@ section#hero-msg{
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
-    color: #444;
+    color: #1C4666;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -300,7 +301,7 @@ section#hero-msg{
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #7ec1d2;
   }
   
   /* Style the accordion panel. Note: hidden by default */
