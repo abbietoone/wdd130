@@ -102,8 +102,8 @@ footer p a:hover {
 }
 
 img#hero-img {
-    display: block;
     margin: 0 auto;
+    display: grid;
   }
 
   .home-title {
