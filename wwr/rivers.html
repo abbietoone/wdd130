@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="JavaScript" href="javascript.">
 </head>
 
 <body>
@@ -36,21 +37,21 @@
                     <div class="numbertext">2 / 4</div>
                     <img id="slide-2" src="https://byui-wdd.github.io/wdd130/resources/images/rafting41_1024.jpg"
                         alt="White water rafters navigating a small waterfall" style="width:100%">
-                    <div class="text">Caption Two</div>
+                    <div class="text">Adventure</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 4</div>
                     <img id="slide-3" src="https://byui-wdd.github.io/wdd130/resources/images/rafting28_1024.jpg"
                         alt="A ful raft navigating around large boulders in a river" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <div class="text">Fun for Everyone</div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">4 / 4</div>
                     <img id="slide-4" src="https://byui-wdd.github.io/wdd130/resources/images/rafting35_1024.jpg"
                         alt="People smiling and navigating around large boulders in a river" style="width:100%">
-                    <div class="text">Caption Three</div>
+                    <div class="text">Come and be in Nature</div>
                 </div>
 
                 <div class="slider-nav">
@@ -63,6 +64,35 @@
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <script>let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
     </div>
     <br>
 
@@ -77,19 +107,82 @@
     <div>
         <button class="accordion">Grand Canyon, Arizona</button>
         <div class="panel">
-            <p>Lorem ipsum...</p>
+            <p>This is the grand daddy of all canyons and the grand daddy of all river trips. You will never forget your
+                visit to the Grand Canyon.
+
+                Grand Canyon river rafting combines world-class whitewater with breathtaking scenery to make one truly
+                unforgettable river experience. The canyon is filled not only with exhilarating whitewater rapids, but
+                with side canyons and ancient indian ruins accessible only by river.
+
+                CLASS I - X: The Grand Canyon uses a unique river rating scale. The rapids in the Canyon are technically
+                rated I - X ( 1 - 10) to accommodate such a wide variety of rapids and river variances. However, most
+                people are familiar with the regular I - V river rating scale, so we often refer to both.</p>
         </div>
 
         <button class="accordion">Main Fork of the Salmon River, Idaho</button>
         <div class="panel">
-            <p>Lorem ipsum...</p>
+            <p>Nestled deep in the Frank Church Wilderness of No Return winds the Salmon river. The Salmon was given the
+                nickname long ago as the River of No Return by the people living near it because of the number of folks
+                that came to visit and fell so in love with the rugged beauty of the river that they never left.
+
+                Herds of elk and deer graze on the hillsides around the river and bear and bighorn sheep are also
+                commonly sighted. The river corridor is also lined with awe inspiring ponderosa pine which tower over
+                the sandy beaches in the campsites and provide shelter from sun or rain when needed.
+
+                Let's not forget the rapids! They range from class I-IV. The Salmon is one of the longest undammed
+                rivers in the United States. As a free flowing river the water is higher, faster, and colder in the
+                early summer and lower, slower, and warmer in the late summer. There are good rapids all summer...but
+                families with children who like to swim tend to appreciate the late summer's slower, warmer water more.
+            </p>
         </div>
 
         <button class="accordion">Desolation and Gray Canyon, Utah
         </button>
         <div class="panel">
-            <p>Lorem ipsum...</p>
+            <p>Winding through canyons in central Utah, in some of the most desolate land anywhere, the Green river
+                flows towards the mighty Colorado river and the sea. High grey stone cliffs, beautiful desert scenery,
+                and great rapids have made this run famous. This 84-mile trip runs from from Sand Wash to Swaseys Rapid
+                (just outside Green River Utah) and boasts outstanding scenery, interesting geologic formations,
+                evidence of prehistoric and historic human activity, and great whitewater opportunities.
+
+                Desolation is rated a Class II/III and is usually done in 6 days
+
+                Desolation Canyon has been recognized as a National Landmark. This designation is based on the
+                uniqueness and rich history that the canyon tells.</p>
         </div>
+        <script>var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }</script>
+        </section>
+        <div id="background"></div>
+        <img class="mountains" src="https://byui-wdd.github.io/wdd130/resources/images/salmon-boat-beach.jpg"
+            alt="River with rafts on the shore">
+        <section class="msg">
+            <h2>Next Summer booking open now!</h2>
+            <p>Make sure to reserve your date now, we have limited runs on each river and they go fast. If you have only
+                certain dates that you can get away you should book now.
+            </p>
+        </section>
+        <section>
+            <a class="last_paragraph"></a>
+            <p>If you have specific dates you need, we recommend booking a year in advance. If you can be more flexible
+                6 months in advance is usually sufficient.</p>
+        </section>
     </div>
 
     </main>

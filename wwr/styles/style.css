@@ -1,8 +1,8 @@
 div #content {
-    max-width:1600px;
+    max-width: 1600px;
     background-color: powderblue;
     margin: auto;
-    height:200px;
+    height: 200px;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ main section {
     width: 80px;
 }
 
-nav a{
+nav a {
     color: #1C4666;
     text-decoration: none;
     padding: 35px;
@@ -65,10 +65,10 @@ nav a:hover {
 }
 
 #background {
-    background-color:#f5de77;
+    background-color: #f5de77;
     color: #1C4666;
-    height:725px;
-    max-width:1600px;
+    height: 725px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ footer a {
     text-decoration: none;
 }
 
-.icon{
+.icon {
     width: 80px;
     padding-top: 10px;
 }
@@ -106,9 +106,9 @@ img#hero-img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
+}
 
-  .home-title {
+.home-title {
     font-family: Manrope, Helvetica, sans-serif;
     font-size: 2em;
 }
@@ -138,7 +138,7 @@ h2 {
     margin: 0;
 }
 
-#logo_link{
+#logo_link {
     padding-top: 5px;
     padding-top: 5px;
     justify-self: center;
@@ -153,134 +153,167 @@ footer {
     align-items: center;
 }
 
-footer .social img{
+footer .social img {
     padding-top: 15px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
     margin: 200px 0;
 }
 
 main section img {
     box-sizing: border-box;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
 }
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
+    margin-top: -100px;
     grid-column: 1/4;
     grid-row: 1/3;
 }
-section#hero-msg{
+
+section#hero-msg {
     grid-column: 2/3;
-    grid-row: 1/2;  
+    grid-row: 1/2;
     margin-top: 100px;
     justify-self: center;
     align-self: center;
     justify-content: center;
     align-content: center;
 }
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
-.home-grid{
+
+.home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.card-img{
+
+.card-img {
     width: 100%;
     transition: transform .5s;
     border: 10px solid #1C4666;
-} 
+}
+
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
-.rivers-card{
-    grid-column-start:2;
+
+.rivers-card {
+    grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start:2;
-    grid-row-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.camping-card{
-    grid-column-start:5;
-    grid-column-end:7;
-    grid-row-start:2;
-    grid-row-end:3;
+
+.camping-card {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.rapids-card{
-    grid-column-start:8;
-    grid-column-end:10;
-    grid-row-start:2;
-    grid-row-end:3;
+
+.rapids-card {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-#background{
-    grid-column-start:1;
-    grid-column-end:11 ;
-    grid-row-start:4;
-    grid-row-end:9;
+
+#background {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 9;
 }
-.mountains{
+
+.mountains {
     width: 100%;
-    grid-column-start:2;
-    grid-column-end:7;
-    grid-row-start:5;
-    grid-row-end:8;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
     box-shadow: 5px 5px 10px #6f7364;
 }
-.msg{
-    grid-column-start:6;
-    grid-column-end:10;
-    grid-row-start:6;
-    grid-row-end:7;
+
+.msg {
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
 @media screen and (max-width: 900px) {
-    #hero.img, .home-grid {
+
+    #hero.img,
+    .home-grid {
         display: block;
         height: auto;
     }
-    nav, footer {
+
+    nav,
+    footer {
         flex-direction: column;
     }
+
     nav a {
         display: block;
         padding: 15px;
     }
+
     #hero {
         margin-top: 0;
     }
+
     #hero-msg {
         margin-top: 0;
-        
+
     }
+
     #hero-msg h4 {
         display: none;
     }
+
     #hero-msg h1 {
         color: #7ec1d2;
     }
+
     .home-title {
         font-size: 25px;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
         margin: 50px auto;
         width: 60%;
     }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
+
+    .mountains,
+    .msg {
         width: 80%;
         display: block;
         margin: 0 auto;
     }
+
     footer {
         margin-top: 25px;
     }
@@ -288,7 +321,7 @@ section#hero-msg{
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
+    background-color: #dedbdb;
     color: #1C4666;
     cursor: pointer;
     padding: 18px;
@@ -297,22 +330,42 @@ section#hero-msg{
     border: none;
     outline: none;
     transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+    font-size: large
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
     background-color: #7ec1d2;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 22px;
     background-color: white;
     display: none;
     overflow: hidden;
-  }
+}
 
-  .prev, .next {
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -325,31 +378,42 @@ section#hero-msg{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  .text {
-    color: #ffffff;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  .numbertext {
-    color: #ffffff;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -358,27 +422,67 @@ section#hero-msg{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-
-.slider img {
-    flex:1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-}
-.slider-nav {
-    display:flex:block;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left:50%;
-    transform: translateX(-50%);
-    z index:1;
 }
 
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.msg {
+    background-color: #f5de77;
+    color: #ffffff;
+    padding: 35px;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color: #f5de77;
+    color: #ffffff;
+    padding: 35px;
+}
+
+.msg p {
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+.mountains {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.last_paragraph {
+    color: #1C4666;
+    background-color: #1C4666;
+}
