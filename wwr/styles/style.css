@@ -487,6 +487,7 @@ section#hero-msg {
     color: #1C4666;
     background-color: #1C4666;
 }
+
 /*this is CSS for the contactus.html page*/
 body {
     /* Center the form on the page */
@@ -499,6 +500,7 @@ form {
     padding: 1em;
     border: 1px solid#7ec1d2;
     border-radius: 1em;
+    margin-top: 2em;
 }
 
 p+p {
