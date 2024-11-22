@@ -1,0 +1,284 @@
+div #content {
+    max-width: 1600px;
+    background-color: powderblue;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 35px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+header {
+    background-color: #f797a5;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav a:hover {
+    background-color: #f25668;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.book,
+.join {
+    background-color: #f25668;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.book:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.join:hover {
+    background-color: #f25668;
+    color: #1C4666;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 80px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+img#hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+
+.home-title {
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.msg p {
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+
+body {
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+section#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-img {
+    width: 100%;
+    transition: transform .5s;
+    border: 10px solid #f797a5;
+}
+
+.rivers-card {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.camping-card {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.rapids-card {
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+@media screen and (max-width: 900px) {
+
+    #hero.img,
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+
+    #hero-msg {
+        margin-top: 0;
+
+    }
+
+    #hero-msg h4 {
+        display: none;
+    }
+
+    #hero-msg h1 {
+        color: #7ec1d2;
+    }
+
+    .home-title {
+        font-size: 25px;
+    }
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
+        margin: 70px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+section#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#background {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 9;
+}
