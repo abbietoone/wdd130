@@ -52,11 +52,6 @@ nav a:hover {
     color: #000000;
 }
 
-.join:hover {
-    background-color: #f25668;
-    color: #1C4666;
-}
-
 .icon {
     width: 80px;
     padding-top: 10px;
@@ -338,4 +333,86 @@ section#hero-msg {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #dedbdb;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: large
+    
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color:#f797a5;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 22px;
+    background-color:#dedbdb;
+    display: none;
+    overflow: hidden;
+    padding: 20px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: large
+}
+
+* {
+    box-sizing:content-box
+}
+.paragraph {
+    padding: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-bottom: 70px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.msg{
+    color: #f25668;
+    padding: 2px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.taffyzoomedin-card {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+}
+.event-card {
+    width: 30%;
+    justify-self: left;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding-top:100px ;
+    padding-bottom:100px;
+    padding-left: 100px;
 }
