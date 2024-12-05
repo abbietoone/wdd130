@@ -111,6 +111,11 @@ img#hero-img {
 .home-title {
     font-family: Manrope, Helvetica, sans-serif;
     font-size: 2em;
+}
+
+.home-title {
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: 2em;
     margin-top: 10px;
 }
 
@@ -482,7 +487,6 @@ section#hero-msg {
     color: #1C4666;
     background-color: #1C4666;
 }
-
 /*this is CSS for the contactus.html page*/
 body {
     /* Center the form on the page */

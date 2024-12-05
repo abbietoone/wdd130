@@ -345,7 +345,8 @@ section#hero-msg {
     border: none;
     outline: none;
     transition: 0.4s;
-    font-size: large
+    font-size: 1em;
+    line-height: 1.5em;
     
 }
 
@@ -393,7 +394,7 @@ section#hero-msg {
     border: none;
     outline: none;
     font-family: Manrope, Helvetica, sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     line-height: 1.5em;
     padding-bottom: 15px;
     width: 70%;
@@ -415,4 +416,29 @@ section#hero-msg {
     padding-top:100px ;
     padding-bottom:100px;
     padding-left: 100px;
+}
+<section id="hero-msg">
+                <h1 class="home-title">Have An Adventure</h1>
+                <h4>Make Memories with Dry Oar</h4>
+                <div class='button-box'>
+                    <a class='book' href="contactus.html">Book Now</a>
+                </div>
+            </section>
+            #hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+section#hero-msg {
+    margin-top: 2px;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+#hero {
+    margin-top: 0;
+}
+#hero-msg {
+    margin-top: 0;
+
 }
