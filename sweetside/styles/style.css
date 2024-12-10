@@ -131,13 +131,6 @@ nav {
     justify-content: space-around;
 }
 
-#hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
-    grid-column: 1/4;
-    grid-row: 1/3;
-}
 
 section#hero-msg {
     grid-column: 2/3;
@@ -216,7 +209,7 @@ section#hero-msg {
     }
 
     #hero-msg h4 {
-        display: #000000;
+        color: #000000;
     }
 
     #hero-msg h1 {
