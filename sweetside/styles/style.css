@@ -148,37 +148,36 @@ section#hero-msg {
     z-index: -1;
 }
 
-.home-grid {
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 20px;
 }
 
-.card-img {
-    width: 100%;
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.small-img {
+    display: inline-block;
+    width: 300px;
     transition: transform .5s;
     border: 10px solid #f797a5;
+    transition: transform .5s;
 }
 
 .taffy-card {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
+    margin-left: 210px;
+    display: inline-block;
 }
 
 .sharks-card {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: inline-block;
 }
 
 .skiddles-card {
-    grid-column-start: 8;
-    grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: inline-block;
 }
 
 @media screen and (max-width: 900px) {
@@ -281,19 +280,12 @@ section#hero-msg {
     line-height: 1.5em;
     padding-bottom: .2px;
     grid-column-start: 1;
-    grid-column-end: 11;
+    grid-column-end: 8;
     grid-row-start: 3;
-    grid-row-end: 7;
+    grid-row-end: 11;
 }
 
-/* CSS for the Shop Page*/
-
-.card-img {
-    width: 100%;
-    transition: transform .5s;
-    border: 10px solid #f797a5;
-    z-index: -1;
-}
+/* ..................................CSS for the About Me Page,........................................*/
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -381,6 +373,7 @@ img#hero-img {
     margin-right: auto;
     width: 100%;
 }
+
 section#title-msg {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -392,13 +385,16 @@ section#title-msg {
     font-family: Manrope, Helvetica, sans-serif;
     font-size: 2em;
 }
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 div.acc {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 6;
     align-content: center;
 }
+/* ..................................CSS for the Shop Page,........................................*/
