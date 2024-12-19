@@ -78,6 +78,8 @@ img#hero-img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: -10px;
+    z-index: -1;
 }
 
 .home-title {
@@ -110,7 +112,7 @@ header {
     font-family: Manrope, Helvetica, sans-serif;
     font-size: .8em;
     line-height: 1.5em;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 body {
@@ -144,7 +146,8 @@ footer .social img {
 
 .taffy-card,
 .sharks-card,
-.skiddles-card {
+.skiddles-card,
+ {
     margin: 200px 0;
 }
 
@@ -173,12 +176,13 @@ section#hero-msg {
     align-self: center;
     justify-content: center;
     align-content: center;
+    z-index: 1;
 }
 
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
-    z-index: -1;
+    z-index: -2;
 }
 
 .home-grid {
@@ -202,7 +206,8 @@ section#taffy-card {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-
+    margin-top: 100px;
+    margin-bottom: 100px
 }
 
 #sharks-card {
@@ -210,6 +215,8 @@ section#taffy-card {
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-top: 100px;
+    margin-bottom: 100px
 }
 
 #skiddles-card {
@@ -217,6 +224,8 @@ section#taffy-card {
     grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-top: 100px;
+    margin-bottom: 100px
 }
 
 #background {
@@ -226,7 +235,10 @@ section#taffy-card {
     grid-row-end: 9;
 }
 
-
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -267,13 +279,6 @@ section#taffy-card {
         font-size: 25px;
     }
 
-    .taffy-card,
-    .sharks-card,
-    .skiddles-card {
-        margin: 50px auto;
-        width: 60%;
-    }
-
     #background {
         display: none;
     }
@@ -301,12 +306,6 @@ section#hero-msg {
     align-content: center;
 }
 
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-}
-
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -332,16 +331,16 @@ section#hero-msg {
     font-size: 1em;
     line-height: 1.5em;
     padding-bottom: .2px;
-    grid-column-start: 1;
-    grid-column-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 10;
     grid-row-start: 3;
     grid-row-end: 7;
 }
 
-/* CSS for the Shop Page*/
+/* CSS for the About Us Page................................................................................*/
 
 .card-img {
-    width: 100%;
+    width: 30%;
     transition: transform .5s;
     border: 10px solid #f797a5;
     z-index: -1;
@@ -392,12 +391,13 @@ section#hero-msg {
     border: none;
     outline: none;
     font-family: Manrope, Helvetica, sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     line-height: 1.5em;
     padding-bottom: 15px;
     width: 70%;
     display: block;
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 .msg {
@@ -418,7 +418,8 @@ section#hero-msg {
 img.event-img {
     display: inline-block;
     width: 30%;
-    margin-top: ;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 img#hero-img {
@@ -426,4 +427,94 @@ img#hero-img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    z-index: -1;
+}
+
+p.start_paragraph {
+    color: #f25668;
+    border: none;
+    outline: none;
+    font-family: Manrope, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    width: 560px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .image-container img {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      
+      .overlay-text {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        background-color: none; 
+        color: #000000; 
+        padding: 10px 20px; 
+        font-size: 100px; 
+        text-align: center}
+
+        .subtext {
+            position: absolute;
+        top: 70%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        background-color: none; 
+        color: #000000; 
+        padding: 10px 20px; 
+        font-size: 30px; 
+        text-align: center}
+/* Shop Page..........................................................*/
+
+.grid-map {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+div.skiddles-card {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    padding-bottom: 100px;
+}
+
+div.sharks-card {
+    padding-bottom: 100px;
+}
+
+div.jollys-card {
+    padding-bottom: 100px;
+}
+
+div.honey-card {
+    padding-bottom: 100px;
+}
+
+div.nerds-card {
+    padding-bottom: 100px;
+}
+
+div.taffy-card {
+    padding-bottom: 100px;
+}
+
+div.hunk-card {
+    padding-bottom: 100px;
+}
+
+div.new-card {
+    padding-bottom: 100px;
 }
